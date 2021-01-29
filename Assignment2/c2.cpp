@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -11,14 +12,8 @@ int main(){
     float average;
 
     sum = n1 + n2 + n3 + n4 + n5;
-    average = sum/5;
+    average = sum/5.0f;
 
-    cout << average;
-
-
-
-  
-
-
+    cout << setprecision(3) << average;
 
 }
