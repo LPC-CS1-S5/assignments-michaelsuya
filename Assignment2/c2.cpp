@@ -12,7 +12,7 @@ int main(){
     float average;
 
     sum = n1 + n2 + n3 + n4 + n5;
-    average = sum/5.0f;
+    average = sum/5.0000f;
 
     cout << setprecision(3) << average;
 
