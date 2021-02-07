@@ -1,13 +1,14 @@
 #include <iostream>
-#include <iomanip>
-using namespace std;
 
 int main() {
-  double quotient, number1 = 132.364, number2 = 26.91;
+  double Celsius, Fahrenheit;
 
-  quotient = number1 / number2;
-  cout << setprecision(5) << quotient << endl;
-  cout << setprecision(4) << quotient << endl;
+  std::cout << "Enter the temperature by Celsius:\n";
+  std::cin >> Celsius;
+
+  Fahrenheit = 9/5.0 * Celsius + 32;
+
+  std::cout << "Celsius " << Celsius << " is " << Fahrenheit << " Fahrenheit.\n";
 
 
 }
