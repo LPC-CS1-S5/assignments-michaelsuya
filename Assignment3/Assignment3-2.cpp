@@ -1,26 +1,23 @@
 #include <iostream>
-using namespace std;
 
 int main() {
 
     double males;
     double females;
+    double total;
 
-    cout << "How many males and females are in the class?";
-    cin >> males;
-    cin >> females;
+    std::cout << "How many males and females are in the class?\n";
+    std::cout << "Males: \n";
+    std::cin >> males;
+    std::cout << "Females: \n";
+    std::cin >> females;
 
-    double total_students = males + females;
+    total = males + females;
+    double percentage_males = males / total * 100;
+    double percentage_females = females / total * 100;
 
-    double percentage_males = males / total_students * 100;
-    double percentage_females = females / total_students * 100;
-
-    
-
-
-
-
-
-
+    std::cout << "\nThere are " << total << " students total.\n";
+    std::cout << "The class is " << percentage_males << "% male.\n";
+    std::cout << "The class is " << percentage_females << "% female.\n";
 
 }
