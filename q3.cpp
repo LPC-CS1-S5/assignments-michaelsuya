@@ -18,7 +18,10 @@ int main(){
   avg = (n1 + n2 + n3)/3;
 
   std::cout << std::setprecision(5) << std::fixed;
-  std::cout << sum << "\n";
-  std::cout << avg << "\n";
+  std::cout << "Num1: " << n1 << "\n";
+  std::cout << "Num2: " << n2 << "\n";
+  std::cout << "Num3: " << n3 << "\n";
+  std::cout << "Sum: " << sum << "\n";
+  std::cout << "Avg: " << avg << "\n";
 
 }
