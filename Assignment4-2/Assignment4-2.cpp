@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 using namespace std;
 
 int main() {
@@ -8,10 +6,12 @@ int main() {
   int num1, num2, num3;
   int min, max, other;
 
-  srand(time(0));
-  num1 = rand() % 100;
-  num2 = rand() % 100;
-  num3 = rand() % 100;
+  cout << "Enter first number: ";
+  cin >> num1;
+  cout << "Enter second number: ";
+  cin >> num2;
+  cout << "Enter third number: ";
+  cin >> num3;
 
   min = num1;
   max = num3;
@@ -51,7 +51,7 @@ int main() {
     }
   }
 
-  cout << "The three numbers are " << num1 << ", " << num2 << ", and " << num3 << ".\n";
+  cout << "\nThe three numbers are " << num1 << ", " << num2 << ", and " << num3 << ".\n";
   cout << "Minimum: " << min << "\n";
   cout << "Other: " << other << "\n";
   cout << "Maximum: " << max << "\n";
