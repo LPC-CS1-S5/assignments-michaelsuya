@@ -5,13 +5,13 @@ int main(){
 
   int x = 2;
   int i = 0;
-  int y;
+  int n;
   int result = 1;
 
-  cout << "Enter y: ";
-  cin >> y;
+  cout << "Enter n power: ";
+  cin >> n;
 
-  while (i < y) {
+  while (i < n) {
     result *= x;
     ++i;
   }
