@@ -8,7 +8,7 @@ int main() {
   int n, r;
   int result = 1;
 
-  cout << "Enter n power: ";
+  cout << "Enter power n: ";
   cin >> n;
 
   cout << "Enter range r: ";
