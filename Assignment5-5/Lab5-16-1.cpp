@@ -33,7 +33,7 @@ for (int i = 0; i < n; i++) {
   cout << "Second score: ";
   cin >> score2;
   
-  studentrecord << name << " " << score1 << " " << score2 << endl;
+  studentrecord << name << "," << score1 << "," << score2 << endl;
 
 }
 

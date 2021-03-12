@@ -38,7 +38,7 @@ while (getline(fileA, line)) {
   
  }
 
-  average = sum / counter;
+average = sum / counter;
 
 cout << "Min: " << min << "\n";
 cout << "Max: " << max << "\n";

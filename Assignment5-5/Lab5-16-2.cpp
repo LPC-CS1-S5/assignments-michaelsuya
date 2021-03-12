@@ -16,33 +16,52 @@ if (!stuRec) {
 }
 
 int n;
-string name;
+string line, name;
 double score1, score2;
-double average, stuSum, totalSum;
-
-string line;
+double stuSum, stuAvg, classSum, classAvg;
 int counter = 0;
 
-  while (getline(stuRec, line, ',')) {
+  while (getline(stuRec, line)) {
+
+    //int i = std::stoi(line);
 
     if (counter == 0) {
-      cout << "Number of students: \n";
-      n = std::stoi(line);
+      stringstream ss (line);
+      string tempn;
+      getline(ss, tempn);
+      n = stoi(tempn);
     }
     
     else {
       stringstream ss (line);
       string tempstr;
-      getline(ss, name, ',');
+      string tempname;
+      getline(ss, tempstr, ',');
+      tempname = tempstr;
       getline(ss, tempstr, ',');
       score1 = stoi(tempstr);
       getline(ss, tempstr, ',');
       score2 = stoi(tempstr);
+
+      stuSum = score1 + score2;
+      stuAvg = (score1 + score2) / 2;
+
+      classSum += stuSum;
+
+      cout << tempname << " student sum" << stuSum << "\n";
+      cout << tempname << " student average" << stuAvg << "\n";
+      
     }
     
     counter++;
     
   }
+
+  classAvg = classSum / (n * 2);
+
+  cout << "Class total: " << classSum << "\n";
+  cout << "Class average: " << classAvg << "\n";
+
 
 }
 
