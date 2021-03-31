@@ -15,8 +15,7 @@ if (!stuRec) {
   exit(0);
 }
 
-int n;
-string line, name;
+string line, name, n;
 double score1, score2;
 double stuSum, stuAvg, classSum, classAvg;
 int counter = 0;
@@ -27,37 +26,36 @@ int counter = 0;
 
     if (counter == 0) {
       stringstream ss (line);
-      string tempn;
-      getline(ss, tempn);
-      n = stoi(tempn);
+      string n;
+      getline(ss, n);
+      int tempn = stoi(n);
     }
     
     else {
       stringstream ss (line);
-      string tempstr;
-      string tempname;
-      getline(ss, tempstr, ',');
-      tempname = tempstr;
-      getline(ss, tempstr, ',');
-      score1 = stoi(tempstr);
-      getline(ss, tempstr, ',');
-      score2 = stoi(tempstr);
+      string name;
+      getline(ss, name, ',');
+      string score1;
+      getline(ss, score1, ',');
+      double escore1 = stoi(score1);
+      string score2;
+      getline(ss, score2, ',');
+      double escore2 = stoi(score2);
 
-      stuSum = score1 + score2;
-      stuAvg = (score1 + score2) / 2;
+      stuSum = escore1 + escore2;
+      stuAvg = (escore1 + escore2) / 2;
 
       classSum += stuSum;
+      counter++;
 
-      cout << tempname << " student sum" << stuSum << "\n";
-      cout << tempname << " student average" << stuAvg << "\n";
+      cout << name << " student sum" << stuSum << "\n";
+      cout << name << " student average" << stuAvg << "\n";
       
     }
-    
-    counter++;
-    
+
   }
 
-  classAvg = classSum / (n * 2);
+  classAvg = classSum / (counter * 2);
 
   cout << "Class total: " << classSum << "\n";
   cout << "Class average: " << classAvg << "\n";
