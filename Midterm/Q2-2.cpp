@@ -22,10 +22,12 @@ double stuSum, stuAvg;
   while (getline(studentrecord, line)) {
 
     stringstream ss (line);
+	cout << " line " << line << endl;
     string name;
     getline(ss, name, ' ');
     string score1;
     getline(ss, score1, ' ');
+	cout << "Score 1 " << score1 << endl;
     double scr1 = stoi(score1);
     string score2;
     double scr2 = stoi(score2);
