@@ -34,7 +34,7 @@ for (int i = 0; i < n; i++) {
   cout << "Salary: ";
   cin >> salary;
   
-  emprecord << ID << " " << name << " " << department << " " << salary << endl;
+  emprecord << "Employee ID: " << ID << " " << "Name: " << " " << name << " " << department << " " << salary << endl;
 
   } 
 }
