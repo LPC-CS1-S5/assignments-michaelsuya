@@ -23,14 +23,13 @@ cin >> n;
 
 for (int i = 0; i < n; i++) {
 
-  cout << "Student name: \n";
+  cout << "Student name: ";
   cin >> name;
 
   cout << "Scores: ";
   cin >> score1 >> score2;
   
-  studentrecord << name << endl; 
-  studentrecord << score1 << " " << score2 << endl;
+  studentrecord << name << " " << score1 << " " << score2 << endl;
 
 }
 

@@ -7,7 +7,6 @@ int getRdnum(int n2);
 int getRdnum(int n1, int n2);
 
 int main() {
-
   int n1, n2;
   srand(time(0));
   
@@ -19,7 +18,6 @@ int main() {
   cout << "1-100: " << getRdnum() << endl;
   cout << "1-n2: " << getRdnum(n2) << endl;
   cout << "n1-n2: " << getRdnum(n1, n2) << endl;
-
 }
 
 int getRdnum() {
