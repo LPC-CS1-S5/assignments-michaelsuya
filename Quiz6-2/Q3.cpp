@@ -27,6 +27,14 @@ void getRandnum(int &n1, int &n2, int &n3) {
 }
 
 void findMin(int n1, int n2, int n3) {
+// 	int m;
+//   m = n1;
+//   if (m > n2)
+//     m = n2;
+//   if (m > n3)
+//     m = n3;
+//   return m;
+
    for (int i = 0; i < 3; i++) {
       if (i == 0) {
           min = n1;
